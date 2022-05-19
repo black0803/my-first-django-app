@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Index</title>
+    </head>
+    <body>
+        {% if apps %}
+        <ul>
+        {% for app in apps %}
+            <li>{{ app }}</li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No apps are available.</p>
+    {% endif %}
+    </body>
+</html>
